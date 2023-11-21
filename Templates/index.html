@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>car_prediction</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 20%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 10%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        body {
+            text-align: center;
+            background-image: url('https://w.forfun.com/fetch/cb/cb2082724b1e7853f3d1d250dad3feb9.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h2 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Car Prediction</h2>
+    <form action="/predict" method="post">
+        <span style="font-size: 20px; font-family: Arial, sans-serif;">Please enter the customer details:</span><br><br>
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" placeholder="Age" required="required"><br><br>
+        <label for="AnnualSalary">AnnualSalary:</label>
+        <input type="text" id="AnnualSalary" name="AnnualSalary" placeholder="AnnualSalary" required="required"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
